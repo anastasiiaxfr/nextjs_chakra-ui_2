@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Box, Text, Button, VStack } from '@chakra-ui/react';
+import { Box, Text, Button, VStack, useColorModeValue } from '@chakra-ui/react';
 import Logo from '@/components/Logo';
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
             <Text fontSize="10em" fontWeight="900" lineHeight="0.9" color="main">
               404
             </Text>
-            <Text fontSize="lg" color="gray.600">
+            <Text fontSize="lg" color={useColorModeValue("gray.600", "white")}>
               Oops! The page you are looking for does not exist.
             </Text>
           </Box>

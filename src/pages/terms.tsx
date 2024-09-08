@@ -81,7 +81,7 @@ export default function Home() {
               7. Limitation of Liability
             </Box>
             <Text>
-              Biccas is provided on an "as-is" basis without any warranties. We do not guarantee the accuracy or
+              Biccas is provided on an &quot;as-is&quot; basis without any warranties. We do not guarantee the accuracy or
               completeness of the information provided and are not liable for any damages arising from your use of the
               service.
             </Text>

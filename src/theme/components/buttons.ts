@@ -32,7 +32,7 @@ const Button = {
     rounded: {
       bg: "main",
       color: "white",
-      borderRadius: "16px",
+      borderRadius: "16pc",
       transition: "0.3s",
       _hover: {
         bg: "color.1",
