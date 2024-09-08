@@ -26,6 +26,9 @@ export default function Section() {
                             src="/img/img1.png"
                             alt="Image 1"
                             mx="auto"
+                            width="410"
+                            objectFit='contain'
+                            fallbackSrc='https://via.placeholder.com/300x400'
                         />
                         <Image
                             src="/img/img2.png"

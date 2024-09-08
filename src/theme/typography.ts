@@ -33,6 +33,14 @@ const typography = {
       lineHeight: ["20px", "30px"],
       fontWeight: "500",
     },
+    heading2: {
+      fontSize: ["14px", "18px", "22px"], // Responsive font sizes
+      lineHeight: ["20px", "30px"],
+      fontWeight: "700",
+      textTransform: "uppercase",
+      mt: 6,
+      mb: 2,
+    },
   },
 };
 

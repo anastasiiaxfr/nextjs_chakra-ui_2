@@ -16,6 +16,7 @@ export default function Section() {
                             <ListItem
                                 display="flex"
                                 alignItems="center"
+                                textAlign="left"
                                 gap="0.5em"
                                 fontSize="18px"
                                 fontWeight="500"

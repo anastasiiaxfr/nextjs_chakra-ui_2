@@ -28,11 +28,13 @@ export default function Header() {
                                 <Button as="a" href="/" variant="primary" size="sm">
                                     Sign Up
                                 </Button>
-                                <Switcher />
+
                             </Stack>
+                            <Switcher />
                             <Button display={{ base: "flex", md: "none" }} ref={btnRef} onClick={onOpen} colorScheme="gray" size="sm">
                                 <HamburgerIcon />
                             </Button>
+
                         </Stack>
                     </Flex>
                 </Container>

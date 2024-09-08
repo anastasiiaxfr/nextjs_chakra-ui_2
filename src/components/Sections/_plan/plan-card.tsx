@@ -18,8 +18,8 @@ interface PlanCardsProps {
 
 export default function PlanCards({ plans }: PlanCardsProps) {
     const lightBackgroundColor = useColorModeValue('white', 'dark.1');
-    const darkTextColor = useColorModeValue('text.dark.0', 'text.dark.0');
-    const lightTextColor = useColorModeValue('main', 'white');
+    const darkTextColor = useColorModeValue('text.dark.0', 'white');
+    const lightTextColor = useColorModeValue('text.dark.1', 'whiteAlpha.700');
 
     return (
         <>
@@ -41,22 +41,23 @@ export default function PlanCards({ plans }: PlanCardsProps) {
                             content: '""',
                             position: 'absolute',
                             zIndex: '-1',
-                            bottom: '-35vmin',
+                            top: '50em',
                             left: '50%',
-                            transform: 'translateX(-50%)',
+                            transform: 'translateX(-50%) translateY(-42em)',
                             bg: 'whiteAlpha.300',
                             borderRadius: "50%",
                             w: "100vmin",
                             h: "100vmin",
+                            display: isPro ? 'block' : 'none',
                         }}
                     >
-                        <Box as="h4" textStyle="h4" color={isPro ? 'white' : lightTextColor}>
+                        <Box as="h4" textStyle="h4" color={isPro ? 'white' : darkTextColor}>
                             {i.type}
                         </Box>
                         <Text my={2}>{i.desc}</Text>
-                        <HStack>
+                        <HStack color={isPro ? 'white' : darkTextColor}>
                             <sup>$</sup>
-                            <Text fontSize="50px" fontWeight="600" color={isPro ? 'white' : lightTextColor}>
+                            <Text fontSize="50px" fontWeight="600">
                                 {i.cost}
                             </Text>
                         </HStack>
@@ -72,9 +73,9 @@ export default function PlanCards({ plans }: PlanCardsProps) {
                                         display="flex"
                                         alignItems="center"
                                         gap="0.5em"
-                                        fontSize="18px"
+                                        fontSize={{ base: "14px", sm: "18px" }}
                                         fontWeight="500"
-                                        color={darkTextColor}
+                                        color="text.dark.0"
                                         key={ind}
                                     >
                                         <ListIcon as={IconCheck} w="24px" h="24px" />
